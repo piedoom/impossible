@@ -24,7 +24,7 @@ body{
   text-align: center;
 }
 
-#submitForm{
+#submitButton{
   margin-top: 20px;
   background: #2875ef;
   color: white;
@@ -41,7 +41,7 @@ body{
   text-align: center;
 }
 
-#submitForm:hover{
+#submitButton:hover{
   background: #2361c4;
   border-right-color: #2361c4;
 }

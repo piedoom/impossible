@@ -6,7 +6,9 @@ function init(){
     var ctx  = canvas.getContext("2d");
     var impossibleButton = document.getElementById('impossibleButton');
     var form = document.getElementById('form');
+    var actualForm = document.getElementById('actualForm');
     var darken = false;
+    var submitButton = document.querySelector("#submitButton");
 
     var texture = new Image();
     texture.src = "./images/triangle.svg";
@@ -63,6 +65,9 @@ function init(){
         form.style.zIndex = 1000;
         form.style.opacity = 1;
         darken = true;
+    }
+    submitButton.onclick = function(){
+        actualForm.submit();
     }
     resize();
 }
